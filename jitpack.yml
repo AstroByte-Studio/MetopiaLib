@@ -1,5 +1,6 @@
 jdk:
-  - 17
+  - openjdk17
 
-script:
-  - mvn clean package
+before_install:
+  - sdk install java 17.0.3-open
+  - sdk use java 17.0.3-open
